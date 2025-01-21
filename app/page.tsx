@@ -6,6 +6,7 @@ import { button as buttonStyles } from "@heroui/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import { Accordion, AccordionItem } from "@/components/accordion";
 
 export default function Home() {
   return (
@@ -21,6 +22,18 @@ export default function Home() {
           Beautiful, fast and modern React UI library.
         </div>
       </div>
+
+      <Accordion>
+        <AccordionItem key="content1" title="Title 1">
+          Content 1
+        </AccordionItem>
+        <AccordionItem key="content2" title="Title 2">
+          Content 2
+        </AccordionItem>
+        <AccordionItem key="content3" title="Title 3">
+          Content 3
+        </AccordionItem>
+      </Accordion>
 
       <div className="flex gap-3">
         <Link
